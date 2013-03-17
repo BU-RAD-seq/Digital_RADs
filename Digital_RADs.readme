@@ -9,7 +9,7 @@ of the study and estimate the number of necessary RAD markers.  Determining how 
 is best achieved by conducting digital digests of the most appropriate reference genome with a panel
 of restriction enzymes that cut at different frequencies (Davey et al. 2011). Additional reduction
 can be achieved by using two enzymes, thus targeting only regions where the enzymes cut adjacent to
-each other within a specified size window (Hohenlohe et al. 2012).
+each other within a specified size window (Hohenlohe et al. 2012, Peterson et al. 2012).
 
 This python script conducts digital digests of a reference genome (or any fasta file) with either
 one or two enzymes, and can be used to optimize the experimental design of a RAD-seq study. The
@@ -93,10 +93,10 @@ window_start	The lower threshold for the size selection window*
 window_end		The upper threshold for the size selection window*
 
 *This size selection step is used in a double-digest protocol to further reduce the number of
-targeted loci. Entering values of 300 and 400 for window_start and window_end, respectively, will
-return the tags where the two enzymes cut adjacent to each other in a 300-400 bp window. Keep in
-mind that when performing the size selection step in the lab the fragments captured will be the
-insert plus the length of the ligated adapters.
+targeted loci.  Note that the size window is for only the insert fragment (i.e., insert minus the
+adapters). For example, if your protocol size selects for ligated fragments of 300-400 bp and your
+adapters comprise 125 bp then you should input 175 and 275 for your window_start and window_end
+values, respecitvely.
 
 
 REFERENCES
@@ -109,4 +109,7 @@ discovery and genotyping using next-generation sequencing. Nature Reviews Geneti
 
 Hohenlohe PA, Bassham S, Currey M, Cresko WA (2012) Extensive linkage disequilibrium and parallel
 adaptive divergence across threespine stickleback genomes. Phil Trans Roy Soc B. 367, 395-408.
+
+Peterson BK, Weber JN, Kay EH, Fisher HS, Hoekstra HE (2012). Double digest RADseq: an inexpensive
+method for do novo SNP discovery and genotyping in model and non-model species. PLoS One. 7, e37135.
 
