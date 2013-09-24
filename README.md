@@ -1,6 +1,6 @@
 Digital_RADs
 ============
-Digital_RADs.py Version 1: June 2012
+Digital_RADs.py Version 1.02: Sept 2013
 
 The sequencing of restriction site-associated DNA (RAD) markers enables the simultaneous targeting
 and genotyping of thousands of homologous loci across a set of individual samples (Baird et al.
