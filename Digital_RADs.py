@@ -114,9 +114,7 @@ if enz_num == 1:
                     outfile.write(seq)
             outfile.close()
 
-            command=('rm temp')
-            p = subprocess.Popen(command, shell=True)
-            sts = os.waitpid(p.pid, 0)[1]
+            os.remove('temp')
     else:
         print('\nERROR: infile does not appear to be in fasta format')
         print('Check that first line begins with ">"\n')
@@ -195,9 +193,7 @@ elif enz_num == 2:
                     outfile.write(seq)
             outfile.close()
 
-            command=('rm temp')
-            p = subprocess.Popen(command, shell=True)
-            sts = os.waitpid(p.pid, 0)[1]
+            os.remove('temp')
     else:
         print('\nERROR: infile does not appear to be in fasta format')
         print('Check that first line begins with ">"\n')
