@@ -1,6 +1,6 @@
 Digital_RADs
 ============
-Digital_RADs.py Version 1.02: Sept 2013
+Digital_RADs.py Version 1.03: Feb 2013
 
 The sequencing of restriction site-associated DNA (RAD) markers enables the simultaneous targeting
 and genotyping of thousands of homologous loci across a set of individual samples (Baird et al.
@@ -11,7 +11,8 @@ of the study and estimate the number of necessary RAD markers.  Determining how 
 is best achieved by conducting digital digests of the most appropriate reference genome with a panel
 of restriction enzymes that cut at different frequencies (Davey et al. 2011). Additional reduction
 can be achieved by using two enzymes, thus targeting only regions where the enzymes cut adjacent to
-each other within a specified size window (Hohenlohe et al. 2012, Peterson et al. 2012).
+each other within a specified size window (Hohenlohe et al. 2012, Peterson et al. 2012, DaCosta and
+Sorenson 2014).
 
 This python script conducts digital digests of a reference genome (or any fasta file) with either
 one or two enzymes, and can be used to optimize the experimental design of a RAD-seq study. The
@@ -105,6 +106,9 @@ REFERENCES
 
 Baird NA, Etter PD, Atwood TS, Currey MC, Shiver AL, Lewis ZA, Selker EU, Cresko WA, Johnson EA
 (2008) Rapid SNP discovery and genetic mapping using sequenced RAD markers. PLoS One. 3, e3376.
+
+DaCosta JM, Sorenson MD (2014). Amplification biases and consistent recovery of loci in a
+double-digest RAD-seq protocol. PLoS One. 9, e106713.
 
 Davey JW, Hohenlohe PA, Etter PD, Boone JQ, Catchen JM, Blaxter ML (2011) Genome-wide genetic marker
 discovery and genotyping using next-generation sequencing. Nature Reviews Genetics. 12, 499-510.
