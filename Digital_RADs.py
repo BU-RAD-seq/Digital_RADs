@@ -1,7 +1,7 @@
 #############################################################################################
 ##
 ##Digital_RADs.py
-##Version 1.02: Sept 2013
+##Version 1.03: Feb 2015
 ##Created by Michael Sorenson and Jeffrey DaCosta
 ##Copyright (c) 2012 Boston University. All rights reserved.
 ##
@@ -45,7 +45,7 @@ def reverse_complement(seq):
 
 print('\n********************************************************************************************\n'+
       'Digital_RADs.py\n'+
-      'Version 1.02: Sept 2013\n\n'+
+      'Version 1.03: Feb 2015\n\n'+
       'Created by Michael Sorenson and Jeffrey DaCosta\n'+
       'Copyright (c) 2012 Boston University. All rights reserved.\n\n'+
       'Usage with 1 enzyme:\n'+
@@ -113,7 +113,6 @@ if enz_num == 1:
                     seq=line.strip()
                     outfile.write(seq)
             outfile.close()
-
             os.remove('temp')
     else:
         print('\nERROR: infile does not appear to be in fasta format')
@@ -192,7 +191,6 @@ elif enz_num == 2:
                     seq=line.strip()
                     outfile.write(seq)
             outfile.close()
-
             os.remove('temp')
     else:
         print('\nERROR: infile does not appear to be in fasta format')
