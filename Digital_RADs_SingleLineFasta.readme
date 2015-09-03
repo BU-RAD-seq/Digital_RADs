@@ -2,4 +2,6 @@ Digital_RADs_SingleLineFasta.py Version 1.0: Sept 2015
 
 This version of the Digital_RADs script requires a genome fasta file with sequences for each contig on a single line (i.e., no wrapping of sequences). It functions exactly like Digital_RADs.py, except that it does not create a new file for each contig in the input fasta file. This is useful if you are working with a draft genome with several thousand contigs because it will not create thousands of new files in the directory.
 
+We recommend the fasta_formatter tool in the fastx toolkit for converting sequences in a genome fasta file from a wrapped to a single line format.
+
 See the README file for Digital_RADs.py for details on usage.
